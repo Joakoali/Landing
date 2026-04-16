@@ -16,13 +16,13 @@ const SOCIALS = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[#262626] py-10 px-6">
+    <footer className="border-t border-border py-10 px-6">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
         <div className="flex flex-col items-center sm:items-start gap-1">
           <span className="text-lg font-black tracking-widest text-white">
             IXTAL
           </span>
-          <span className="text-xs text-[#a3a3a3]">
+          <span className="text-xs text-text-muted">
             &copy; 2026 Ixtal Web Design. Todos los derechos reservados.
           </span>
         </div>
@@ -32,7 +32,7 @@ export default function Footer() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-[#a3a3a3] hover:text-white transition-colors duration-200"
+              className="text-sm text-text-muted hover:text-white transition-colors duration-200"
             >
               {link.label}
             </a>
@@ -46,7 +46,7 @@ export default function Footer() {
               href={social.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs text-[#a3a3a3] hover:text-[#e8500a] transition-colors duration-200"
+              className="text-xs text-text-muted hover:text-accent transition-colors duration-200"
             >
               {social.label}
             </a>

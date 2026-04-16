@@ -20,14 +20,14 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#0a0a0a]/90 backdrop-blur-md border-b border-[#262626]"
+          ? "bg-bg/90 backdrop-blur-md border-b border-border"
           : "bg-transparent"
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a
           href="#"
-          className="text-xl font-black tracking-widest text-white hover:text-[#f97316] transition-colors duration-200"
+          className="text-xl font-black tracking-widest text-white hover:text-accent-light transition-colors duration-200"
         >
           IXTAL
         </a>
@@ -36,7 +36,7 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="px-4 py-2 rounded-md text-[#a3a3a3] hover:text-white hover:bg-white/5 transition-all duration-200 text-sm font-medium"
+              className="px-4 py-2 rounded-md text-text-muted hover:text-white hover:bg-white/5 transition-all duration-200 text-sm font-medium"
             >
               {link.label}
             </a>

@@ -72,7 +72,7 @@ export default function Services() {
     <section id="servicios" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <span className="text-[#e8500a] text-sm font-semibold tracking-widest uppercase">
+          <span className="text-accent text-sm font-semibold tracking-widest uppercase">
             Servicios
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-black text-white tracking-tight">
@@ -84,18 +84,18 @@ export default function Services() {
           {SERVICES.map((service) => (
             <div
               key={service.id}
-              className="group relative p-8 rounded-xl border border-[#262626] bg-[#111111] hover:border-[#e8500a] transition-all duration-300 hover:shadow-[0_0_30px_rgba(232,80,10,0.1)]"
+              className="group relative p-8 rounded-xl border border-border bg-surface hover:border-accent transition-all duration-300 hover:shadow-[0_0_30px_rgba(232,80,10,0.1)]"
             >
-              <div className="text-[#e8500a] mb-5 transition-transform duration-300 group-hover:scale-110">
+              <div className="text-accent mb-5 transition-transform duration-300 group-hover:scale-110">
                 {service.icon}
               </div>
               <h3 className="text-white font-bold text-lg mb-3 tracking-tight">
                 {service.title}
               </h3>
-              <p className="text-[#a3a3a3] text-sm leading-relaxed">
+              <p className="text-text-muted text-sm leading-relaxed">
                 {service.description}
               </p>
-              <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#e8500a] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-xl" />
+              <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-xl" />
             </div>
           ))}
         </div>

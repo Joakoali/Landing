@@ -97,13 +97,13 @@ export default function Contact() {
     <section id="contacto" className="py-24 px-6">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-16">
-          <span className="text-[#e8500a] text-sm font-semibold tracking-widest uppercase">
+          <span className="text-accent text-sm font-semibold tracking-widest uppercase">
             Contacto
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-tight">
             ¿Tenés un proyecto en mente?
           </h2>
-          <p className="mt-4 text-[#a3a3a3] text-lg leading-relaxed">
+          <p className="mt-4 text-text-muted text-lg leading-relaxed">
             Contanos sobre tu idea y te respondemos a la brevedad.
           </p>
         </div>
@@ -122,7 +122,7 @@ export default function Contact() {
           <div>
             <label
               htmlFor="user_name"
-              className="block text-sm font-medium text-[#a3a3a3] mb-2"
+              className="block text-sm font-medium text-text-muted mb-2"
             >
               Nombre
             </label>
@@ -131,7 +131,7 @@ export default function Contact() {
               name="user_name"
               type="text"
               required
-              className="w-full px-4 py-3 rounded-lg bg-[#111111] border border-[#262626] text-white placeholder-[#666] focus:border-[#e8500a] focus:outline-none transition-colors duration-200"
+              className="w-full px-4 py-3 rounded-lg bg-surface border border-border text-white placeholder-[#666] focus:border-accent focus:outline-none transition-colors duration-200"
               placeholder="Tu nombre"
             />
           </div>
@@ -139,7 +139,7 @@ export default function Contact() {
           <div>
             <label
               htmlFor="user_email"
-              className="block text-sm font-medium text-[#a3a3a3] mb-2"
+              className="block text-sm font-medium text-text-muted mb-2"
             >
               Email
             </label>
@@ -148,7 +148,7 @@ export default function Contact() {
               name="user_email"
               type="email"
               required
-              className="w-full px-4 py-3 rounded-lg bg-[#111111] border border-[#262626] text-white placeholder-[#666] focus:border-[#e8500a] focus:outline-none transition-colors duration-200"
+              className="w-full px-4 py-3 rounded-lg bg-surface border border-border text-white placeholder-[#666] focus:border-accent focus:outline-none transition-colors duration-200"
               placeholder="tu@email.com"
             />
           </div>
@@ -156,7 +156,7 @@ export default function Contact() {
           <div>
             <label
               htmlFor="message"
-              className="block text-sm font-medium text-[#a3a3a3] mb-2"
+              className="block text-sm font-medium text-text-muted mb-2"
             >
               Mensaje
             </label>
@@ -165,7 +165,7 @@ export default function Contact() {
               name="message"
               required
               rows={5}
-              className="w-full px-4 py-3 rounded-lg bg-[#111111] border border-[#262626] text-white placeholder-[#666] focus:border-[#e8500a] focus:outline-none transition-colors duration-200 resize-none"
+              className="w-full px-4 py-3 rounded-lg bg-surface border border-border text-white placeholder-[#666] focus:border-accent focus:outline-none transition-colors duration-200 resize-none"
               placeholder="Contanos sobre tu proyecto..."
             />
           </div>
@@ -173,7 +173,7 @@ export default function Contact() {
           <button
             type="submit"
             disabled={status === "sending"}
-            className="w-full px-8 py-3.5 rounded-lg bg-[#e8500a] text-white font-semibold hover:bg-[#f97316] transition-all duration-200 text-sm shadow-lg hover:shadow-[0_0_24px_rgba(232,80,10,0.45)] disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full px-8 py-3.5 rounded-lg bg-accent text-white font-semibold hover:bg-accent-light transition-all duration-200 text-sm shadow-lg hover:shadow-[0_0_24px_rgba(232,80,10,0.45)] disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {status === "sending" ? "Enviando..." : "Enviar mensaje"}
           </button>
@@ -193,7 +193,7 @@ export default function Contact() {
         <div className="flex flex-col items-center gap-4">
           <a
             href={`mailto:${EMAIL}`}
-            className="text-[#a3a3a3] hover:text-white text-sm transition-colors duration-200"
+            className="text-text-muted hover:text-white text-sm transition-colors duration-200"
           >
             {EMAIL}
           </a>
@@ -206,7 +206,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={social.label}
-                className="p-2.5 rounded-lg border border-[#262626] text-[#a3a3a3] hover:text-[#e8500a] hover:border-[#e8500a] transition-all duration-200"
+                className="p-2.5 rounded-lg border border-border text-text-muted hover:text-accent hover:border-accent transition-all duration-200"
               >
                 {social.icon}
               </a>

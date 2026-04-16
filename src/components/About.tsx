@@ -9,7 +9,7 @@ export default function About() {
     <section id="sobre" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <span className="text-[#e8500a] text-sm font-semibold tracking-widest uppercase">
+          <span className="text-accent text-sm font-semibold tracking-widest uppercase">
             Sobre Ixtal
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-black text-white tracking-tight">
@@ -19,13 +19,13 @@ export default function About() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="text-[#a3a3a3] text-lg leading-relaxed mb-6">
+            <p className="text-text-muted text-lg leading-relaxed mb-6">
               Detrás de Ixtal está{" "}
               <span className="text-white font-semibold">Joaquín Alizegui</span>
               , desarrollador web en Barcelona. Creo sitios rápidos, modernos y
               optimizados que ayudan a negocios a crecer online.
             </p>
-            <p className="text-[#a3a3a3] text-lg leading-relaxed">
+            <p className="text-text-muted text-lg leading-relaxed">
               Desde landing pages hasta plataformas completas, cada proyecto se
               construye con código limpio, buen diseño y foco en resultados.
             </p>
@@ -36,12 +36,12 @@ export default function About() {
             {HIGHLIGHTS.map((item) => (
               <div
                 key={item.label}
-                className="p-6 rounded-xl border border-[#262626] bg-[#111111] text-center"
+                className="p-6 rounded-xl border border-border bg-surface text-center"
               >
-                <span className="block text-2xl font-black text-[#e8500a] mb-1">
+                <span className="block text-2xl font-black text-accent mb-1">
                   {item.value}
                 </span>
-                <span className="text-sm text-[#a3a3a3]">{item.label}</span>
+                <span className="text-sm text-text-muted">{item.label}</span>
               </div>
             ))}
           </div>

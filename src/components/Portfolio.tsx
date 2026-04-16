@@ -17,9 +17,8 @@ const PROJECTS = [
       "Cloudflare",
     ],
     //FALTAN LAS SCREENSHOOTS !!
-    screenshot: "/screenshots/gg-propiedades.webp",
+    screenshot: "/ggpropiedades.com_.webp",
     demoUrl: "https://ggpropiedades.com",
-    githubUrl: "https://github.com/Joakoali/gg-propiedades",
   },
   {
     id: "control-gastos",
@@ -27,9 +26,8 @@ const PROJECTS = [
     description: "App de control de gastos con gráficos y categorías.",
     tags: ["React", "TypeScript", "Vite", "Tailwind", "Firebase"],
     //FALTAN LAS SCREENSHOOTS !!
-    screenshot: "/screenshots/control-gastos.webp",
+    screenshot: "/control-gastos-nine-zeta.vercel.app_.webp",
     demoUrl: "https://control-gastos-nine-zeta.vercel.app",
-    githubUrl: "https://github.com/Joakoali/control-gastos",
   },
   {
     id: "adocmat",
@@ -38,9 +36,8 @@ const PROJECTS = [
       "Landing institucional con panel de administración y formulario de contacto.",
     tags: ["React", "TypeScript", "Vite", "Tailwind", "EmailJS"],
     //FALTAN LAS SCREENSHOOTS !!
-    screenshot: "/screenshots/adocmat.webp",
+    screenshot: "/adocmat.vercel.app_.webp",
     demoUrl: "https://adocmat.vercel.app",
-    githubUrl: "https://github.com/Joakoali/Adocmat",
   },
 ];
 
@@ -69,18 +66,18 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
   return (
     <article
       ref={cardRef}
-      className="group rounded-xl overflow-hidden border border-[#262626] bg-[#111111] hover:border-[#e8500a] transition-all duration-300 hover:shadow-[0_0_30px_rgba(232,80,10,0.1)]"
+      className="group rounded-xl overflow-hidden border border-border bg-surface hover:border-accent transition-all duration-300 hover:shadow-[0_0_30px_rgba(232,80,10,0.1)]"
     >
       {/* Browser frame (Recrea IOs browser in order to be more careta) */}
-      <div className="border-b border-[#262626]">
-        <div className="flex items-center gap-2 px-4 py-2.5 bg-[#1a1a1a]">
+      <div className="border-b border-border">
+        <div className="flex items-center gap-2 px-4 py-2.5 bg-surface-2">
           <div className="flex gap-1.5">
             <span className="w-2.5 h-2.5 rounded-full bg-[#ff5f57]" />
             <span className="w-2.5 h-2.5 rounded-full bg-[#febc2e]" />
             <span className="w-2.5 h-2.5 rounded-full bg-[#28c840]" />
           </div>
           <div className="flex-1 mx-2">
-            <div className="bg-[#111111] rounded-md px-3 py-1 text-[10px] text-[#a3a3a3] text-center truncate">
+            <div className="bg-surface rounded-md px-3 py-1 text-[10px] text-text-muted text-center truncate">
               {project.demoUrl.replace("https://", "")}
             </div>
           </div>
@@ -88,7 +85,7 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
       </div>
 
       {/* Screenshot container */}
-      <div className="h-52 overflow-hidden bg-[#0a0a0a]">
+      <div className="h-52 overflow-hidden bg-bg">
         <img
           src={project.screenshot}
           alt={`Captura de ${project.name}`}
@@ -102,14 +99,14 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
         <h3 className="text-white font-bold text-lg mb-2 tracking-tight">
           {project.name}
         </h3>
-        <p className="text-[#a3a3a3] text-sm leading-relaxed mb-4">
+        <p className="text-text-muted text-sm leading-relaxed mb-4">
           {project.description}
         </p>
         <div className="flex flex-wrap gap-2 mb-5">
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="text-xs px-2.5 py-1 rounded-md bg-[#1a1a1a] border border-[#262626] text-[#a3a3a3] font-medium"
+              className="text-xs px-2.5 py-1 rounded-md bg-surface-2 border border-border text-text-muted font-medium"
             >
               {tag}
             </span>
@@ -120,17 +117,9 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
             href={project.demoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-5 py-2 rounded-lg bg-[#e8500a] text-white text-sm font-semibold hover:bg-[#f97316] transition-all duration-200"
+            className="px-5 py-2 rounded-lg bg-accent text-white text-sm font-semibold hover:bg-accent-light transition-all duration-200"
           >
             Ver sitio
-          </a>
-          <a
-            href={project.githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-5 py-2 rounded-lg border border-[#262626] text-[#a3a3a3] text-sm font-semibold hover:text-white hover:border-[#e8500a] transition-all duration-200"
-          >
-            GitHub
           </a>
         </div>
       </div>
@@ -143,7 +132,7 @@ export default function Portfolio() {
     <section id="portfolio" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <span className="text-[#e8500a] text-sm font-semibold tracking-widest uppercase">
+          <span className="text-accent text-sm font-semibold tracking-widest uppercase">
             Portfolio
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-black text-white tracking-tight">
