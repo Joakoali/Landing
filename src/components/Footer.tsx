@@ -1,3 +1,5 @@
+import Logo from "./Logo";
+
 const QUICK_LINKS = [
   { label: "Servicios", href: "#servicios" },
   { label: "Sobre", href: "#sobre" },
@@ -19,9 +21,7 @@ export default function Footer() {
     <footer className="border-t border-border py-10 px-6">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
         <div className="flex flex-col items-center sm:items-start gap-1">
-          <span className="text-lg font-black tracking-widest text-white">
-            IXTAL
-          </span>
+          <Logo color="white" size={36} />
           <span className="text-xs text-text-muted">
             &copy; 2026 Ixtal Web Design. Todos los derechos reservados.
           </span>
