@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import Logo from "./Logo";
 
 export default function Hero() {
   const heroRef = useRef<HTMLElement>(null);
@@ -54,6 +55,14 @@ export default function Hero() {
           backgroundSize: "60px 60px",
         }}
       />
+
+      {/* Decorative logo watermark */}
+      <Logo
+        color="orange"
+        size={320}
+        className="absolute right-[-40px] top-1/2 -translate-y-1/2 opacity-[0.06] pointer-events-none z-0"
+      />
+
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <span className="animate-fade-slide-up animation-fill-both inline-block text-accent text-sm font-semibold tracking-widest uppercase mb-6">
           Ixtal Web Design
