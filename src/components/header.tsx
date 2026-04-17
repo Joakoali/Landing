@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Logo from "./Logo";
 
 const NAV_LINKS = [
   { label: "Servicios", href: "#servicios" },
@@ -27,8 +28,9 @@ export default function Header() {
       <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a
           href="#"
-          className="text-xl font-black tracking-widest text-white hover:text-accent-light transition-colors duration-200"
+          className="flex items-center gap-2 text-xl font-black tracking-widest text-white hover:text-accent-light transition-colors duration-200"
         >
+          <Logo color="orange" size={28} />
           IXTAL
         </a>
         <div className="flex items-center gap-1">
