@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
 
+
 const NAV_LINKS = [
   { label: "Servicios", href: "#servicios" },
   { label: "Sobre", href: "#sobre" },
@@ -65,6 +66,7 @@ export default function Header() {
           onClick={() => setMenuOpen((prev) => !prev)}
           aria-label={menuOpen ? "Cerrar menú" : "Abrir menú"}
           aria-expanded={menuOpen}
+          aria-controls="mobile-menu"
         >
           <span
             className={`block w-5 h-0.5 bg-current transition-all duration-200 origin-center ${
@@ -86,9 +88,11 @@ export default function Header() {
 
       {/* Mobile dropdown */}
       <div
+        id="mobile-menu"
         className={`md:hidden overflow-hidden transition-all duration-300 ${
-          menuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"
+          menuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
         }`}
+        inert={!menuOpen}
       >
         <nav className="flex flex-col px-6 pb-4 gap-1">
           {NAV_LINKS.map((link) => (
