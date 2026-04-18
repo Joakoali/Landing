@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 700" fill="#ffffff">
+  <!-- Arco exterior (cuarto de anillo, cuadrante inferior-izquierdo) -->
+  <path d="M 10 300 A 340 340 0 0 0 350 640 L 350 594 A 294 294 0 0 1 56 300 Z"/>
+
+  <!-- Arco medio (semicírculo en forma de C) -->
+  <path d="M 350 56 A 244 244 0 0 0 106 300 A 244 244 0 0 0 350 544 L 350 498 A 198 198 0 0 1 152 300 A 198 198 0 0 1 350 102 Z"/>
+
+  <!-- Disco con muesca rectangular en el cuadrante inferior-derecho -->
+  <path d="M 350 154 A 146 146 0 0 1 496 300 L 350 300 L 350 446 A 146 146 0 0 1 204 300 A 146 146 0 0 1 350 154 Z"/>
+</svg>
