@@ -13,21 +13,23 @@ export default function About() {
             Sobre Ixtal
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-black text-white tracking-tight">
-            Quiénes somos
+            El desarrollador detrás
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-text-muted text-lg leading-relaxed mb-6">
-              Detrás de Ixtal está{" "}
-              <span className="text-white font-semibold">Joaquín Alizegui</span>
-              , desarrollador web en Barcelona. Creo sitios rápidos, modernos y
-              optimizados que ayudan a negocios a crecer online.
+              Soy{" "}
+              <span className="text-white font-semibold">Joaquín</span>
+              , desarrollador web en Barcelona. Trabajo con negocios que quieren
+              una presencia online que los represente de verdad — rápida, bien
+              construida y con diseño que importa.
             </p>
             <p className="text-text-muted text-lg leading-relaxed">
-              Desde landing pages hasta plataformas completas, cada proyecto se
-              construye con código limpio, buen diseño y foco en resultados.
+              Desde landing pages hasta plataformas completas, cada proyecto lo
+              trato como si fuera el mío: código limpio, buen diseño y foco en
+              resultados.
             </p>
           </div>
 
