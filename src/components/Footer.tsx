@@ -19,15 +19,17 @@ const SOCIALS = [
 export default function Footer() {
   return (
     <footer className="border-t border-border py-10 px-6">
-      <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div className="max-w-6xl mx-auto flex flex-col items-center gap-8 sm:flex-row sm:items-center sm:justify-between">
+        {/* Logo + copyright */}
         <div className="flex flex-col items-center sm:items-start gap-1">
           <Logo color="white" size={36} />
-          <span className="text-xs text-text-muted">
+          <span className="text-xs text-text-muted text-center sm:text-left">
             &copy; 2026 Ixtal Web Design. Todos los derechos reservados.
           </span>
         </div>
 
-        <nav className="flex items-center gap-6">
+        {/* Quick links */}
+        <nav className="flex items-center gap-6 flex-wrap justify-center">
           {QUICK_LINKS.map((link) => (
             <a
               key={link.href}
@@ -39,6 +41,7 @@ export default function Footer() {
           ))}
         </nav>
 
+        {/* Socials */}
         <div className="flex items-center gap-4">
           {SOCIALS.map((social) => (
             <a
