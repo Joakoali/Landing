@@ -46,7 +46,7 @@ const SERVICES = [
     id: "seo",
     title: "Optimización & SEO",
     description:
-      "Mejoramos la velocidad y visibilidad de tu sitio para que llegue a más clientes potenciales.",
+      "Mejoramos la visibilidad y velocidad de tu sitio para que llegue a más potenciales clientes.",
     icon: (
       <svg
         width="28"
@@ -95,7 +95,7 @@ export default function Services() {
               <p className="text-text-muted text-sm leading-relaxed">
                 {service.description}
               </p>
-              <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-xl" />
+              <div className="absolute bottom-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-accent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-b-xl" />
             </div>
           ))}
         </div>
