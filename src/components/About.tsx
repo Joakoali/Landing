@@ -20,11 +20,9 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-text-muted text-lg leading-relaxed mb-6">
-              Soy{" "}
-              <span className="text-white font-semibold">Joaquín</span>
-              , desarrollador web en Barcelona. Trabajo con negocios que quieren
-              una presencia online que los represente de verdad — rápida, bien
-              construida y con diseño que importa.
+              Soy <span className="text-white font-semibold">Joaquín</span>,
+              desarrollador web en Barcelona. Trabajo con negocios que quieren
+              una presencia online que los represente de verdad.
             </p>
             <p className="text-text-muted text-lg leading-relaxed">
               Desde landing pages hasta plataformas completas, cada proyecto lo
