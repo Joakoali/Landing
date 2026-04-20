@@ -32,16 +32,16 @@ export default function About() {
           </div>
 
           {/* Highlight cards */}
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-3 gap-2 sm:gap-4">
             {HIGHLIGHTS.map((item) => (
               <div
                 key={item.label}
-                className="p-6 rounded-xl border border-border bg-surface text-center"
+                className="p-3 sm:p-6 rounded-xl border border-border bg-surface text-center"
               >
-                <span className="block text-2xl font-black text-accent mb-1">
+                <span className="block text-lg sm:text-2xl font-black text-accent mb-1 break-words">
                   {item.value}
                 </span>
-                <span className="text-sm text-text-muted">{item.label}</span>
+                <span className="text-xs sm:text-sm text-text-muted leading-tight">{item.label}</span>
               </div>
             ))}
           </div>
