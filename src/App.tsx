@@ -5,8 +5,7 @@ import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-
+import { SpeedInsights } from '@vercel/speed-insights/react'
 export default function App() {
   return (
     <div className="bg-bg min-h-screen">
@@ -19,7 +18,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
-      <SpeedInsights/>
+  <SpeedInsights/>
     </div>
   );
 }
