@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 
-const EMAIL = "info@ixtaldesing.com";
+const EMAIL = "info@ixtaldesign.com";
 
 const SOCIALS = [
   {
