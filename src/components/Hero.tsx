@@ -73,7 +73,7 @@ export default function Hero() {
         </h1>
 
         <p className="animate-fade-slide-up animation-delay-300 animation-fill-both text-lg sm:text-xl text-text-muted max-w-2xl mx-auto mb-10 leading-relaxed">
-          Cada sitio que construimos tiene un propósito claro: representar tu negocio como se merece.
+          Cada sitio que construimos tiene un propósito claro: representar tu negocio en Barcelona como se merece.
         </p>
 
         <div className="animate-fade-slide-up animation-delay-500 animation-fill-both flex flex-col sm:flex-row gap-4 justify-center">
