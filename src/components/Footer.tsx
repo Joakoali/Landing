@@ -8,7 +8,7 @@ const QUICK_LINKS = [
 ];
 
 const SOCIALS = [
-  { label: "Instagram", href: "https://www.instagram.com/ixtalwebdesing" },
+  { label: "Instagram", href: "https://www.instagram.com/ixtalwebdesign" },
   {
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/joaquin-alizegui-0447a820a/",

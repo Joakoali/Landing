@@ -5,7 +5,7 @@ const EMAIL = "info@ixtaldesign.com";
 const SOCIALS = [
   {
     label: "Instagram",
-    href: "https://www.instagram.com/ixtalwebdesing",
+    href: "https://www.instagram.com/ixtalwebdesign",
     icon: (
       <svg
         width="18"
