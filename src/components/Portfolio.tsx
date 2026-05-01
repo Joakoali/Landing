@@ -16,7 +16,6 @@ const PROJECTS = [
       "NextAuth",
       "Cloudflare",
     ],
-    //FALTAN LAS SCREENSHOOTS !!
     screenshot: "/ggpropiedades.com_.webp",
     demoUrl: "https://ggpropiedades.com",
   },
@@ -25,7 +24,7 @@ const PROJECTS = [
     name: "Control Gastos",
     description: "App de control de gastos con gráficos y categorías.",
     tags: ["React", "TypeScript", "Vite", "Tailwind", "Firebase"],
-    //FALTAN LAS SCREENSHOOTS !!
+
     screenshot: "/control-gastos-nine-zeta.vercel.app_.webp",
     demoUrl: "https://control-gastos-nine-zeta.vercel.app",
   },
@@ -34,10 +33,10 @@ const PROJECTS = [
     name: "Adocmat",
     description:
       "Landing institucional con panel de administración y formulario de contacto.",
-    tags: ["React", "TypeScript", "Vite", "Tailwind", "EmailJS"],
-    //FALTAN LAS SCREENSHOOTS !!
-    screenshot: "/adocmat.vercel.app_.webp",
-    demoUrl: "https://adocmat.vercel.app",
+    tags: ["React", "TypeScript", "Vite", "Supabase", "Tailwind", "EmailJS"],
+
+    screenshot: "/adocmat.com_.webp",
+    demoUrl: "https://adocmat.com",
   },
 ];
 
