@@ -16,6 +16,7 @@ const PROJECTS = [
       "NextAuth",
       "Cloudflare",
     ],
+
     screenshot: "/ggpropiedades.com_.webp",
     demoUrl: "https://ggpropiedades.com",
   },
@@ -35,7 +36,7 @@ const PROJECTS = [
       "Landing institucional con panel de administración y formulario de contacto.",
     tags: ["React", "TypeScript", "Vite", "Supabase", "Tailwind", "EmailJS"],
 
-    screenshot: "/adocmat.com_.webp",
+    screenshot: "/adocmat.vercel.app_.webp",
     demoUrl: "https://adocmat.com",
   },
 ];
@@ -89,7 +90,7 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[number] }) {
           src={project.screenshot}
           alt={`Captura de ${project.name}`}
           loading="lazy"
-          className="w-full [.is-visible_&]:animate-screenshot-scroll [.is-visible:hover_&]:[animation-play-state:paused]"
+          className="w-full in-[.is-visible]:animate-screenshot-scroll [.is-visible:hover_&]:[animation-play-state:paused]"
         />
       </div>
 
